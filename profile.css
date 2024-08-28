@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0e8;
+    color: #080808;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #010101;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-nav ul li a:hover,
+.header-nav ul li a.active {
+    color: #fdcf16;
+}
+
+/* Profile Form Section */
+h2 {
+    text-align: center;
+    color: #0f9d05;
+    text-shadow: #464b46;
+    font-size: 44px;
+}
+
+form {
+    background-color: #ecf2ec;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1ab905;
+}
+
+button[type="submit"] {
+    background-color: #25ae03;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #46b908;
+}
+
+/* Profile Summary Section */
+#summary-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-summary {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #070707;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+button[type="submit"],
+button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover,
+button:hover {
+    transform: scale(1.05);
+}

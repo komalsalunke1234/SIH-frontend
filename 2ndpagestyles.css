@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefc;
+    color: #080808;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.accordion-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #e9e9ce;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(8, 8, 8, 0.543);
+}
+
+.accordion-container h2 {
+    text-align: center;
+    color: #140164;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #e0f8e9; /* Light green background */
+    border: 2px solid #9fdb93; /* Greenish border */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    color: #08b411; /* Dark green text */
+}
+
+.accordion-header:hover {
+    background-color: #03a309; /* Darker green on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background-color: #e9e9ce; /* Very light green */
+    border: 1px solid #b2d8b4;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.icon {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0cbe15; /* Dark green for the icon */
+}
+
+.icon.open {
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+/* Animation for accordion content */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation for hover effect on accordion headers */
+.accordion-header:hover {
+    animation: hoverEffect 0.3s ease-in-out;
+}
+
+@keyframes hoverEffect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Styling for buttons */
+button {
+    background-color: #140164;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #1e2374;
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Slight downward movement when clicked */
+}
+
+/* Additional hover effect for a more dynamic feel */
+button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+}

@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #020202; /* Dark blue similar to the uploaded logo */
+    padding: 0px 0;
+    color: white;
+}
+
+/* Header container to maintain content width */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep the header above other elements */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 90px;
+    width: 170px;
+    margin-right: 5px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav ul li {
+    margin-right: 20px;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+
+.container {
+    width: 90%;
+    margin-left: 5px ;
+    margin-right: 0px;
+    margin-bottom: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-aside {
+    width: 18%;
+    background-color: #1fc003; /* Green background */
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.811);
+    margin-right: 50px;
+   /* border-radius: 20px;*/
+    transition: transform 0.3s ease;
+}
+
+.profile-aside:hover {
+    transform: scale(1.00);
+}
+
+.patient-photo {
+    align-self:center;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    width: 70%;
+}
+
+.profile-content h2 {
+    background-color: #06c015;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-content h2:hover {
+    background-color: #6cde29;
+}
+button.submit {
+    /*padding-left: 50px;*/
+    background-color: #0a9fe4;
+    color: rgb(247, 246, 246);
+}
+.family-history {
+    padding: 20px; /* Add some padding around the section */
+}
+
+#family-history-form{
+    display: flex;
+    justify-content: space-between; /* Creates space between the two columns */
+    flex-wrap: wrap; /* Allows the form to wrap onto the next line if necessary */
+}
+
+.form-group {
+    width: 48%; /* Each group will take up about half the width */
+    margin-bottom: 10px; /* Add some space between each form group */
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    margin-left: 10px;
+    padding: 5px;
+    width: 70%; /* Adjust the width of the text input */
+}
+
+.personal-history {
+    padding: 20px; /* Add some padding around the section */
+}
+
+#personal-history-form {
+    display: flex;
+    justify-content: space-between; /* Creates space between the two columns */
+    flex-wrap: wrap; /* Allows the form to wrap onto the next line if necessary */
+}
+
+.form-group {
+    width: 48%; /* Each group will take up about half the width */
+    margin-bottom: 10px; /* Add some space between each form group */
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    margin-left: 10px;
+    padding: 5px;
+    width: 70%; /* Adjust the width of the text input */
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+button {
+    
+    font-size: 20px;
+    padding: 10px 20px;
+    border:#020202;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.submit-btn {
+    /*padding-left: 50px;*/
+    background-color: #04b12c;
+    color: white;
+}
+
+button.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+button.download-btn {
+    background-color: #ecb204;
+    color: white;
+}
+
+button.print-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+   
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.submit-btn:hover {
+    background-color: #4bc604;
+}
+
+button.edit-btn:hover {
+    background-color: #0069d9;
+}
+
+button.download-btn:hover {
+    background-color: #e0a800;
+}
+
+button.print-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+footer {
+    background-color: #010101;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 50px;
+    
+}

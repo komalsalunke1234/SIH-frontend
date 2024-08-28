@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Example</title>
+    <link rel="stylesheet" href="2ndpagestyles.css">
+</head>
+<body>
+
+    <div class="accordion-container">
+        <h2>Health Services and Treatment Options</h2>
+        <ul class="accordion">
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Illness</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Details about common illnesses such as cold, flu, and other viral infections.</p>
+                    <h2>1. Common Cold</h2>
+    <h3>Cause:</h3>
+    <p>Caused by viruses like rhinoviruses.</p>
+    <h3>Symptoms:</h3>
+    <p>Runny or stuffy nose, sore throat, coughing, sneezing, congestion, slight body aches, mild headache, and low-grade fever.</p>
+    <h3>Duration:</h3>
+    <p>Usually lasts 7-10 days.</p>
+    <h3>Treatment:</h3>
+    <p>No specific cure; treatment focuses on relieving symptoms. Over-the-counter (OTC) cold medicines, rest, and fluids are recommended.</p>
+    <h3>Prevention:</h3>
+    <p>Frequent handwashing, avoiding close contact with infected individuals, and not touching the face with unwashed hands.</p>
+
+    <h2>2. Influenza (Flu)</h2>
+    <h3>Cause:</h3>
+    <p>Caused by influenza viruses (types A, B, C, and D).</p>
+    <h3>Symptoms:</h3>
+    <p>High fever, chills, muscle aches, headache, fatigue, weakness, runny or stuffy nose, sore throat, cough, and sometimes gastrointestinal symptoms like nausea and vomiting (more common in children).</p>
+    <h3>Duration:</h3>
+    <p>Typically lasts 1-2 weeks, with severe cases lasting longer.</p>
+    <h3>Treatment:</h3>
+    <p>Antiviral medications (e.g., Tamiflu), rest, fluids, and OTC pain relievers. Severe cases may require hospitalization.</p>
+    <h3>Prevention:</h3>
+    <p>Annual flu vaccination, good hygiene practices, and avoiding close contact with sick individuals.</p>
+
+    <h2>3. Viral Infections</h2>
+    <h3>Types:</h3>
+    <p>Includes a wide range of infections such as gastroenteritis (stomach flu), viral pneumonia, and viral hepatitis.</p>
+    <h3>Symptoms:</h3>
+    <p>Vary depending on the virus, but common symptoms include fever, fatigue, muscle aches, cough, and gastrointestinal issues.</p>
+    <h3>Duration:</h3>
+    <p>Depends on the type of viral infection; can range from a few days to several weeks.</p>
+    <h3>Treatment:</h3>
+    <p>Supportive care, including rest, hydration, and OTC medications to manage symptoms. Antiviral drugs may be prescribed for certain infections.</p>
+    <h3>Prevention:</h3>
+    <p>Vaccinations (for preventable viruses), good hygiene, safe food practices, and avoiding contact with infected individuals.</p>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Injury</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Information on handling injuries including fractures, sprains, and other common issues.</p>
+                    <h2>1. Fractures (Broken Bones)</h2>
+    <h3>What is it?</h3>
+    <p>A fracture is when a bone breaks or cracks.</p>
+    <h3>Signs:</h3>
+    <ul>
+        <li>Severe pain</li>
+        <li>Swelling</li>
+        <li>The bone may look out of place</li>
+        <li>Difficulty moving the area</li>
+    </ul>
+    <h3>What to Do:</h3>
+    <ul>
+        <li><strong>Keep Still</strong>: Don’t move the injured area. Use a splint or sling if you have one.</li>
+        <li><strong>Apply Ice</strong>: Put ice on the injury to reduce swelling.</li>
+        <li><strong>Get Help</strong>: Go to the hospital or call for emergency help.</li>
+    </ul>
+    <h3>Treatment:</h3>
+    <p>Doctors may put a cast on the bone or do surgery to fix it. You’ll also need rest and physical therapy later.</p>
+
+    <h2>2. Sprains</h2>
+    <h3>What is it?</h3>
+    <p>A sprain happens when you stretch or tear a ligament (the tissue that connects bones in a joint).</p>
+    <h3>Signs:</h3>
+    <ul>
+        <li>Pain around the joint</li>
+        <li>Swelling and bruising</li>
+        <li>Difficulty moving the joint</li>
+    </ul>
+    <h3>What to Do:</h3>
+    <p>Follow the R.I.C.E. method:</p>
+    <ul>
+        <li><strong>Rest</strong>: Don’t use the injured joint.</li>
+        <li><strong>Ice</strong>: Apply ice for 15-20 minutes to reduce swelling.</li>
+        <li><strong>Compress</strong>: Wrap the joint with a bandage.</li>
+        <li><strong>Elevate</strong>: Keep the injured area raised to reduce swelling.</li>
+    </ul>
+    <h3>Treatment:</h3>
+    <p>Rest and ice usually help, but severe sprains may need a brace or physical therapy.</p>
+
+    <h2>3. Other Common Issues</h2>
+
+    <h3>Strains</h3>
+    <h4>What is it?</h4>
+    <p>A strain is when muscles or tendons get overstretched or torn.</p>
+    <h4>Signs:</h4>
+    <p>Pain, swelling, and muscle spasms.</p>
+    <h4>What to Do:</h4>
+    <p>Rest, apply ice, and compress with a bandage. Elevate the area if possible.</p>
+
+    <h3>Dislocations</h3>
+    <h4>What is it?</h4>
+    <p>A dislocation is when bones in a joint are forced out of place.</p>
+    <h4>Signs:</h4>
+    <p>The joint looks out of place, with severe pain and swelling.</p>
+    <h4>What to Do:</h4>
+    <p>Don’t try to move it. Get medical help right away.</p>
+
+    <h3>Cuts and Scrapes</h3>
+    <h4>What is it?</h4>
+    <p>These are open wounds that can happen from accidents.</p>
+    <h4>What to Do:</h4>
+    <ul>
+        <li><strong>Stop the Bleeding</strong>: Press a clean cloth on the cut.</li>
+        <li><strong>Clean the Wound</strong>: Rinse with water and apply antiseptic.</li>
+        <li><strong>Cover It</strong>: Use a bandage to keep it clean.</li>
+    </ul>
+
+    <h3>Bruises</h3>
+    <h4>What is it?</h4>
+    <p>Bruises happen when you get hit, causing blood to collect under the skin.</p>
+    <h4>What to Do:</h4>
+    <ul>
+        <li><strong>Apply Ice</strong>: To reduce swelling.</li>
+        <li><strong>Rest</strong>: Avoid using the bruised area if it hurts.</li>
+    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Skin Ailment</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Learn about various skin conditions like acne, rashes, and eczema.</p>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Wellness and Precaution</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Guidance on annual check-ups, vaccinations, and maintaining overall health.</p>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Women's Health</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Explore topics related to breast exams, gynecological health, and reproductive health.</p>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>STD and STI Testing</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Get information on testing and prevention of STDs and STIs.</p>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Sports Needed</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Information on physical therapy, injury prevention, and sports performance enhancement.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="2ndpagescript.js"></script>
+</body>
+</html>

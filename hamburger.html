@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="hamburger.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="menu-heading">
+            <h1>Menu</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><a href="#" onclick="openContent('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="openContent('patient')">Add a Patient</a></li>
+                <li><a href="#" onclick="openContent('opd')">Clinic (OPD)</a></li>
+                <li><a href="#" onclick="openContent('ipd')">IPD</a></li>
+                <li><a href="#" onclick="openContent('lis')">LIS</a></li>
+                <li><a href="#" onclick="openContent('pharmacy')">Store & Pharmacy</a></li>
+                <li><a href="#" onclick="openContent('billing')">Billing</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="content" class="content-area">
+        <h1>Welcome to the Dashboard</h1>
+        <p>Click on the menu items to navigate.</p>
+    </div>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>

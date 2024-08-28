@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hamburger-menu {
+    width: 250px;
+    background-color: #05c612;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+}
+.menu-heading h1{
+    font-size: 37px;
+    color:orangered;
+}
+.menu-toggle {
+    font-size: 34px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: #05c612;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #027517;
+    transform: rotate(360deg);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 15px 20px;
+    border-bottom: 2px solid rgba(11, 1, 1, 0.291);
+}
+
+#menu ul li a {
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    background-color: #027517; /* Green shade */
+}
+
+#menu ul li a:active {
+    background-color: #005310; /* Darker green */
+}
+
+.hidden {
+    transform: translateX(-100%);
+}
+
+.content-area {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.hidden .menu-toggle {
+    transform: rotate(45deg);
+}

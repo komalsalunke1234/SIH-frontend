@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #080808;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Full-width header */
+header {
+    background-color: #020202; /* Dark blue similar to the uploaded logo */
+    padding: 0px 0;
+    color: white;
+}
+
+/* Header container to maintain content width */
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 100px;
+    width: 170px;
+    margin-right: 5px;
+}
+
+.header-nav ul {
+    list-style: disc;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: rgb(249, 249, 253);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-nav a:hover {
+    text-decoration:underline;
+}
+.header-nav ul li a.active {
+    text-decoration: underline;
+    color: #dfd807;
+}
+
+.header-nav ul li a:hover {
+    color: #03aa0b;
+}
+
+/* Main Hero Section */
+.hero {
+    background:url("background.jpg") top center;
+    background-size: cover;
+    background-color: #ecf1f6;
+    padding: 0px 50px;
+    
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.hero-text h2 {
+    color: #080808;
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: rgb(5, 121, 38); /* Dark red color for "Walk in" and "Online" */
+}
+
+.hero-text p {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Doctor Image Section */
+.doctor-img img {
+    height:450px; /* Reduced size to align better with the text */
+    width: auto;
+    object-fit:cover;
+   
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+.doctor-img img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 170px;
+    width: fit-content;
+}
+
+.option {
+   background-color: #adc1c7;
+    padding: 10px;
+    margin-left: 90px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(91, 0, 171, 0.47);
+    width: 45%;
+    text-align: center;
+}
+
+.option img {
+    height: 170px;
+    margin-bottom: 5px;
+}
+
+.option h3 {
+    color: #07a107;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.option p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.option button {
+    background-color: #028602;
+    color: white;
+    padding: 10px 20px;
+    border:#333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option button:hover {
+    background-color: #0c960a;
+}
+
+/* Footer */
+footer {
+    background-color: #010101;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
